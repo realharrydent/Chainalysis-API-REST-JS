@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      import { ChainalysisApiRest } from 'chainalysis-api-rest';
+      ChainalysisApiRest.init({token: {"948cf07be9c989d637"}});
+      ChainalysisApiRest.v2.Users.Transfers.registerTransfer({
+          userID: {userID},
+          asset: {asset},
+          transferReference: `${hash}:${address}`,
+          direction: "received",
+          assetAmount: 0.001 
+      });
+      console.log(ChainalysisApiRest)
+    </script>
+  </head>
+  <body>
+    Logging ChainalysisApiRest
+  </body>
+</html>
